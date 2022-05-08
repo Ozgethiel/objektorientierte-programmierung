@@ -2,10 +2,10 @@ package uebungen.a_mai.a_zwoelfter;
 
 import org.junit.jupiter.api.Test;
 
-class MainTest {
+class HelloWorldTest {
 
     @Test
     void main() {
-        Main.main(null);
+        HelloWorld.main(null);
     }
 }
