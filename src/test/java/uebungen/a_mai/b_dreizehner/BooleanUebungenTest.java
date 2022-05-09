@@ -116,4 +116,18 @@ class BooleanUebungenTest extends SystemOutMockingTest {
 
         assertSystemOutEquals("false");
     }
+
+    @Test
+    void nichtIstWahr() {
+        BooleanUebungen.nicht(false);
+
+        assertSystemOutEquals("true");
+    }
+
+    @Test
+    void nichtIstFalse() {
+        BooleanUebungen.nicht(true);
+
+        assertSystemOutEquals("false");
+    }
 }
