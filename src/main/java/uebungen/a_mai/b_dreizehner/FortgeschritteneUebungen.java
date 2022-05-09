@@ -8,12 +8,12 @@ public class FortgeschritteneUebungen {
         //  Ansonsten soll false auf der Konsole ausgegeben werden.
     }
 
-    public static void ceasarVerschluesselung(char a) {
+    public static void ceasarVerschluesselung(char klartext) {
         // FIXME: Ceasar soll damals eine Verschlüsselung benutzt haben, in der jeder Buchstabe durch seinen 5. Nachfolger im Alphabet ersetzt wird.
-        //  Hier soll der Buchstabe in Variable a mithilfe dieser Verschlüsselung verschlüsselt werden.
+        //  Hier soll der Buchstabe in Variable klartext mithilfe dieser Verschlüsselung verschlüsselt werden.
         //  Beispiel: a wird zu f, b wird zu g
         //  VORSICHT! Was passiert mit z? Bei z geht es wieder von vorne los. Aber wie geht das?
-        //  Gib den verschlüsselten Buchstaben auf der Konsole aus. Es werden nur kleine Buchstaben verwendet.
+        //  Gib den verschlüsselten Buchstaben auf der Konsole aus. Es werden nur kleine Buchstaben zwischen a und z verwendet.
     }
 
     public static void restwertBeiKommazahlen(double a, double b) {
