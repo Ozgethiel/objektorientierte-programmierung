@@ -9,27 +9,76 @@ class GanzzahlUebungenTest extends SystemOutMockingTest {
     void zehn() {
         GanzzahlUebungen.zehn();
 
-        assertSystemOutEquals("Zehn ist 10");
+        assertSystemOutEquals("10 = 10");
+    }
+
+    @Test
+    void addiereZehn() {
+        GanzzahlUebungen.addiereZehn(2);
+
+        assertSystemOutEquals("2 + 10 = 12");
     }
 
     @Test
     void addiere() {
         GanzzahlUebungen.addiere(1, 2);
 
-        assertSystemOutEquals("Summe von a=1 + b=2 ist: 3");
+        assertSystemOutEquals("1 + 2 = 3");
     }
 
     @Test
     void substrahiere() {
         GanzzahlUebungen.substrahiere(10, 5);
 
-        assertSystemOutEquals("Differenz von a=10 + b=5 ist: 5");
+        assertSystemOutEquals("10 - 5 = 5");
     }
 
     @Test
-    void durchschnitt() {
+    void dividiere() {
+        GanzzahlUebungen.dividiere(10, 2);
+
+        assertSystemOutEquals("10 / 2 = 5");
+    }
+
+    @Test
+    void dividiereMitAbrunden() {
+        GanzzahlUebungen.dividiere(10, 3);
+
+        assertSystemOutEquals("10 + 3 = 3");
+    }
+
+    @Test
+    void multipliziere() {
+        GanzzahlUebungen.multipliziere(10, 5);
+
+        assertSystemOutEquals("10 + 5 = 50");
+    }
+
+    @Test
+    void restSollRestwertHaben() {
+        GanzzahlUebungen.rest(10, 3);
+
+        assertSystemOutEquals("10 % 3 = 1");
+    }
+
+    @Test
+    void restSollKeinenRestwertHaben() {
+        GanzzahlUebungen.rest(10, 2);
+
+        assertSystemOutEquals("10 % 2 = 0");
+    }
+
+    @Test
+    void durchschnittMitExaktemErgebnis() {
         GanzzahlUebungen.durchschnitt(10, 5, 6);
 
-        assertSystemOutEquals("Durchschnitt von a=10, b=5 und c=8 ist: 21");
+        assertSystemOutEquals("Durchschnitt von 10, 5 und 8 ist 7");
+    }
+
+    @Test
+    void durchschnittMitAbrunden() {
+        GanzzahlUebungen.durchschnitt(10, 5, 8);
+
+        assertSystemOutEquals("Durchschnitt von 10, 5 und 8 ist 7");
     }
 }

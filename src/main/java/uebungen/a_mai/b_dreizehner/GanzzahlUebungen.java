@@ -6,27 +6,56 @@ public class GanzzahlUebungen {
         // FIXME Der Zahlenwert 10 soll in Variable zehn gespeichert werden.
         int zehn = 0;
 
-        System.out.println("Zehn ist " + zehn);
+        System.out.println("10 = " + zehn);
+    }
+
+    public static void addiereZehn(int a) {
+        // FIXME Die Variable a soll um 10 addiert werden. Das Ergebnis soll und in die Variable summe gespeichert werden.
+        int summe = 0;
+
+        System.out.println(a + " + 10 = " + summe);
     }
 
     public static void addiere(int a, int b) {
-        // FIXME Die Summe aus zwei Ganzzahlen soll in Variable summe gespeichert werden.
+        // FIXME Die Summe aus zwei Ganzzahlen a und b soll in Variable summe gespeichert werden.
         int summe = 0;
 
-        System.out.println("Summe von a=" + a + " + b=" + b + " ist: " + summe);
+        System.out.println(a + " + " + b + " = " + summe);
     }
 
     public static void substrahiere(int a, int b) {
         // FIXME Hier soll die Differenz von Zahl a und b in Variable differenz gespeichert werden.
         int differenz = 0;
 
-        System.out.println("Differenz von a=" + a + " und b=" + b + " ist: " + differenz);
+        System.out.println(a + " - " + b + " = " + differenz);
+    }
+
+    public static void dividiere(int a, int b) {
+        // FIXME Hier soll die Division von Zahl a und b in Variable division gespeichert werden.
+        int division = 0;
+
+        System.out.println(a + " / " + b + " = " + division);
+    }
+
+    public static void multipliziere(int a, int b) {
+        // FIXME Hier soll das Produkt von Zahl a und b in Variable produkt gespeichert werden.
+        int produkt = 0;
+
+        System.out.println(a + " * " + b + " = " + produkt);
+    }
+
+    public static void rest(int a, int b) {
+        // FIXME Hier soll der Rest nach der Division von Zahl a und b in Variable rest gespeichert werden.
+        int rest = 0;
+
+        System.out.println(a + " % " + b + " = " + rest);
     }
 
     public static void durchschnitt(int a, int b, int c) {
         // FIXME Hier soll der Durchschnitt von den Zahlen a, b und c in Variable durchschnitt gespeichert werden.
+        //  Ist das Ergebnis nicht ganzzahlig, soll immer abgerundet werden.
         int durchschnitt = 0;
 
-        System.out.println("Durchschnitt von a=" + a + ", b=" + b + " und c=" + c + " ist: " + durchschnitt);
+        System.out.println("Durchschnitt von " + a + ", " + b + " und " + c + " ist " + durchschnitt);
     }
 }
