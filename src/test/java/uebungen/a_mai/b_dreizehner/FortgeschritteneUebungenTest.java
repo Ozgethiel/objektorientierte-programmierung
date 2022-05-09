@@ -39,7 +39,7 @@ class FortgeschritteneUebungenTest extends SystemOutMockingTest {
     void ceasarVerschluesselungZ() {
         FortgeschritteneUebungen.ceasarVerschluesselung('z');
 
-        assertSystemOutEquals("d");
+        assertSystemOutEquals("e");
     }
 
     @Test
