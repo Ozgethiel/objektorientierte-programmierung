@@ -21,36 +21,36 @@ class KommazahlUebungenTest extends SystemOutMockingTest {
 
     @Test
     void addiere() {
-        KommazahlUebungen.addiere(1.23d, 4.56d);
+        KommazahlUebungen.addiere(1.75d, 4.5d);
 
-        assertSystemOutEquals("5.79");
+        assertSystemOutEquals("6.25");
     }
 
     @Test
     void substrahiere() {
-        KommazahlUebungen.substrahiere(4.56d, 1.23d);
+        KommazahlUebungen.substrahiere(4.75d, 1.5d);
 
-        assertSystemOutEquals("3,33");
+        assertSystemOutEquals("3.25");
     }
 
     @Test
     void multipliziere() {
         KommazahlUebungen.multipliziere(4.56d, 1.23d);
 
-        assertSystemOutEquals("5,6088");
+        assertSystemOutEquals("5.6088");
     }
 
     @Test
     void dividiere() {
-        KommazahlUebungen.dividiere(4.56d, 1.23d);
+        KommazahlUebungen.dividiere(10d, 4d);
 
-        assertSystemOutEquals("3,7073170732");
+        assertSystemOutEquals("2.5");
     }
 
     @Test
     void durchschnitt() {
-        KommazahlUebungen.durchschnitt(1.23d, 4.56d, 7.98d);
+        KommazahlUebungen.durchschnitt(1.23d, 4.56d, 7.89d);
 
-        assertSystemOutEquals("4,56");
+        assertSystemOutEquals("4.56");
     }
 }
