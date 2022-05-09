@@ -43,15 +43,15 @@ class GemischteUebungenTest extends SystemOutMockingTest {
     }
 
     @Test
-    void aIstKleinerGanzzahlBTrue() {
-        GemischteUebungen.aIstKleinerGanzzahlB(5, 10);
+    void aIstGroesserGanzzahlBFalse() {
+        GemischteUebungen.aIstGroesserGanzzahlB(10, 10);
 
-        assertSystemOutEquals("true");
+        assertSystemOutEquals("false");
     }
 
     @Test
-    void aIstGroesserGanzzahlBFalse() {
-        GemischteUebungen.aIstGroesserGanzzahlB(10, 10);
+    void aIstKleinerGanzzahlBTrue() {
+        GemischteUebungen.aIstKleinerGanzzahlB(5, 10);
 
         assertSystemOutEquals("true");
     }
@@ -60,19 +60,12 @@ class GemischteUebungenTest extends SystemOutMockingTest {
     void aIstKleinerGanzzahlBFalse() {
         GemischteUebungen.aIstKleinerGanzzahlB(10, 10);
 
-        assertSystemOutEquals("true");
+        assertSystemOutEquals("false");
     }
 
     @Test
     void aIstGroesserGleichGanzzahlBTrueEchtGroesser() {
         GemischteUebungen.aIstGroesserGleichGanzzahlB(10, 5);
-
-        assertSystemOutEquals("true");
-    }
-
-    @Test
-    void aIstKleinerGleichGanzzahlBTrueEchtGroesser() {
-        GemischteUebungen.aIstKleinerGleichGanzzahlB(10, 5);
 
         assertSystemOutEquals("true");
     }
@@ -85,13 +78,6 @@ class GemischteUebungenTest extends SystemOutMockingTest {
     }
 
     @Test
-    void aIstKleinerGleichGanzzahlTrueGleich() {
-        GemischteUebungen.aIstKleinerGleichGanzzahlB(5, 5);
-
-        assertSystemOutEquals("true");
-    }
-
-    @Test
     void aIstGroesserGleichGanzzahlFalse() {
         GemischteUebungen.aIstGroesserGleichGanzzahlB(5, 10);
 
@@ -99,8 +85,22 @@ class GemischteUebungenTest extends SystemOutMockingTest {
     }
 
     @Test
-    void aIstKleinerGleichGanzzahlFalse() {
+    void aIstKleinerGleichGanzzahlBTrueEchtKleiner() {
         GemischteUebungen.aIstKleinerGleichGanzzahlB(5, 10);
+
+        assertSystemOutEquals("true");
+    }
+
+    @Test
+    void aIstKleinerGleichGanzzahlTrueGleich() {
+        GemischteUebungen.aIstKleinerGleichGanzzahlB(5, 5);
+
+        assertSystemOutEquals("true");
+    }
+
+    @Test
+    void aIstKleinerGleichGanzzahlFalse() {
+        GemischteUebungen.aIstKleinerGleichGanzzahlB(10, 5);
 
         assertSystemOutEquals("false");
     }
@@ -141,15 +141,15 @@ class GemischteUebungenTest extends SystemOutMockingTest {
     }
 
     @Test
-    void aIstKleinerKommazahlBTrue() {
-        GemischteUebungen.aIstKleinerKommazahlB(5, 10);
+    void aIstGroesserKommazahlBFalse() {
+        GemischteUebungen.aIstGroesserKommazahlB(10, 10);
 
-        assertSystemOutEquals("true");
+        assertSystemOutEquals("false");
     }
 
     @Test
-    void aIstGroesserKommazahlBFalse() {
-        GemischteUebungen.aIstGroesserKommazahlB(10, 10);
+    void aIstKleinerKommazahlBTrue() {
+        GemischteUebungen.aIstKleinerKommazahlB(5, 10);
 
         assertSystemOutEquals("true");
     }
@@ -158,19 +158,12 @@ class GemischteUebungenTest extends SystemOutMockingTest {
     void aIstKleinerKommazahlBFalse() {
         GemischteUebungen.aIstKleinerKommazahlB(10, 10);
 
-        assertSystemOutEquals("true");
+        assertSystemOutEquals("false");
     }
 
     @Test
     void aIstGroesserGleichKommazahlBTrueEchtGroesser() {
         GemischteUebungen.aIstGroesserGleichKommazahlB(10, 5);
-
-        assertSystemOutEquals("true");
-    }
-
-    @Test
-    void aIstKleinerGleichKommazahlBTrueEchtGroesser() {
-        GemischteUebungen.aIstKleinerGleichKommazahlB(10, 5);
 
         assertSystemOutEquals("true");
     }
@@ -183,13 +176,6 @@ class GemischteUebungenTest extends SystemOutMockingTest {
     }
 
     @Test
-    void aIstKleinerGleichKommazahlTrueGleich() {
-        GemischteUebungen.aIstKleinerGleichKommazahlB(5, 5);
-
-        assertSystemOutEquals("true");
-    }
-
-    @Test
     void aIstGroesserGleichKommazahlFalse() {
         GemischteUebungen.aIstGroesserGleichKommazahlB(5, 10);
 
@@ -197,8 +183,22 @@ class GemischteUebungenTest extends SystemOutMockingTest {
     }
 
     @Test
+    void aIstKleinerGleichKommazahlBTrueEchtKleiner() {
+        GemischteUebungen.aIstKleinerGleichKommazahlB(10, 5);
+
+        assertSystemOutEquals("false");
+    }
+
+    @Test
+    void aIstKleinerGleichKommazahlTrueGleich() {
+        GemischteUebungen.aIstKleinerGleichKommazahlB(5, 5);
+
+        assertSystemOutEquals("true");
+    }
+
+    @Test
     void aIstKleinerGleichKommazahlFalse() {
-        GemischteUebungen.aIstKleinerGleichKommazahlB(5, 10);
+        GemischteUebungen.aIstKleinerGleichKommazahlB(10, 5);
 
         assertSystemOutEquals("false");
     }
