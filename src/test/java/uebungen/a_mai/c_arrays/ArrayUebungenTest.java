@@ -101,4 +101,13 @@ class ArrayUebungenTest {
 
         assertThat(zahlen).containsExactly(2, 1, 0);
     }
+
+    @Test
+    void umkehrenGeradeAnzahl() {
+        int[] zahlen = {0, 1, 2, 3};
+
+        ArrayUebungen.umkehren(zahlen);
+
+        assertThat(zahlen).containsExactly(3, 2, 1, 0);
+    }
 }

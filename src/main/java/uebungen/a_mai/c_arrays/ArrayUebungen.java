@@ -14,11 +14,14 @@ public class ArrayUebungen {
 
     public static int[] zahlenVonNullBisZehn() {
         // FIXME: Diese Methode soll alle ganzen Zahlen von 0 bis 10 (exklusive) in ein Array vom Typ int schreiben und zurückgeben.
+        //  Die Zahlen sollen keine Lücken haben und der Größe nach sortiert im Array gespeichert sein.
         return null;
     }
 
     public static int[] zahlenVonABisB(int a, int b) {
         // FIXME: Diese Methode soll alle ganzen Zahlen von a bis b (exklusive) in ein Array vom Typ int schreiben und zurückgeben.
+        //  Die Zahlen sollen keine Lücken haben und der Größe nach sortiert im Array gespeichert sein.
+        //  a wird immer die kleinere Zahl sein.
         return null;
     }
 
