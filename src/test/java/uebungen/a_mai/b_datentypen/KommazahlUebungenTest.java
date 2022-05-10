@@ -1,4 +1,4 @@
-package uebungen.a_mai.b_dreizehner;
+package uebungen.a_mai.b_datentypen;
 
 import org.junit.jupiter.api.Test;
 import uebungen.a_mai.SystemOutMockingTest;

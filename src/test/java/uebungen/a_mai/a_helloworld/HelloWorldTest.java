@@ -1,4 +1,4 @@
-package uebungen.a_mai.a_zwoelfter;
+package uebungen.a_mai.a_helloworld;
 
 import org.junit.jupiter.api.Test;
 import uebungen.a_mai.SystemOutMockingTest;
