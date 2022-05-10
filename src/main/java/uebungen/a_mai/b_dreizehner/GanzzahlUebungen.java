@@ -6,6 +6,14 @@ public class GanzzahlUebungen {
         // FIXME Der Zahlenwert 10 soll auf der Konsole ausgegeben werden.
     }
 
+    public static void negativ(int a) {
+        // FIXME Die Variable a soll als negative Zahl auf der Konsole ausgegeben werden.
+    }
+
+    public static void addiereEins(int a) {
+        // FIXME Die Variable a soll um den Wert 1 addiert und auf der Konsole ausgegeben werden.
+    }
+
     public static void addiereZehn(int a) {
         // FIXME Die Variable a soll um 10 addiert werden. Das Ergebnis soll auf der Konsole ausgegeben werden.
     }

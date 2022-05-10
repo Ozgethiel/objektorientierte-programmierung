@@ -13,6 +13,20 @@ class GanzzahlUebungenTest extends SystemOutMockingTest {
     }
 
     @Test
+    void negativ() {
+        GanzzahlUebungen.negativ(10);
+
+        assertSystemOutEquals("-10");
+    }
+
+    @Test
+    void addiereEins() {
+        GanzzahlUebungen.addiereEins(2);
+
+        assertSystemOutEquals("3");
+    }
+
+    @Test
     void addiereZehn() {
         GanzzahlUebungen.addiereZehn(2);
 
