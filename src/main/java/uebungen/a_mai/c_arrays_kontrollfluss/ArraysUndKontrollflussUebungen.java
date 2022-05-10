@@ -1,6 +1,6 @@
-package uebungen.a_mai.c_arrays;
+package uebungen.a_mai.c_arrays_kontrollfluss;
 
-public class ArrayUebungen {
+public class ArraysUndKontrollflussUebungen {
 
     public static int[] leeresArray() {
         // FIXME: Diese Methode soll ein leeres Array vom Typ int erzeugen. Es soll 10 Elemente beinhalten.
