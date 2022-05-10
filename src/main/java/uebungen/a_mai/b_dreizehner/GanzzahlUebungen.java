@@ -11,7 +11,7 @@ public class GanzzahlUebungen {
     }
 
     public static void addiereEins(int a) {
-        // FIXME Die Variable a soll um den Wert 1 addiert und auf der Konsole ausgegeben werden.
+        // FIXME Die Wert in Variable a soll um den Wert 1 erhöht und auf der Konsole ausgegeben werden.
     }
 
     public static void addiereZehn(int a) {
