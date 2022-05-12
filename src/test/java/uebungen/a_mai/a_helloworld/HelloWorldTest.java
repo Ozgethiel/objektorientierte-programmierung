@@ -8,6 +8,6 @@ class HelloWorldTest extends SystemOutMockingTest {
     void main() {
         HelloWorld.main(null);
 
-        assertSystemOutEquals("Hello world!");
+        assertSystemOutEquals("Java Programmieren macht Spaß!");
     }
 }
