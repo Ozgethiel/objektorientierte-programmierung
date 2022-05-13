@@ -54,6 +54,12 @@ class KommazahlUebungenTest extends SystemOutMockingTest {
 
         assertSystemOutEquals("Infinity");
     }
+    @Test
+    void dividiereDurchNull2() {
+        KommazahlUebungen.dividiere(0d, 0d);
+
+        assertSystemOutEquals("NaN");
+    }
 
     @Test
     void durchschnitt() {
