@@ -24,6 +24,6 @@ public class SystemOutMockingTest {
 
     protected void assertSystemOutEquals(String expected) {
         String outString = outContent.toString();
-        assertThat(outString.trim()).isEqualTo(expected);
+        assertThat(outString.substring(0, outString.length() > System.lineSeparator().length() ? outString.length() - System.lineSeparator().length() : 0)).isEqualTo(expected);
     }
 }
