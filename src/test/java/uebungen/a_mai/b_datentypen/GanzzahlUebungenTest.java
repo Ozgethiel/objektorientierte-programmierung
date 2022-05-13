@@ -3,6 +3,8 @@ package uebungen.a_mai.b_datentypen;
 import org.junit.jupiter.api.Test;
 import uebungen.a_mai.SystemOutMockingTest;
 
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
 class GanzzahlUebungenTest extends SystemOutMockingTest {
 
     @Test
@@ -52,6 +54,11 @@ class GanzzahlUebungenTest extends SystemOutMockingTest {
         GanzzahlUebungen.dividiere(10, 2);
 
         assertSystemOutEquals("5");
+    }
+
+    @Test
+    void dividiereDurchNull() {
+        assertThrows(ArithmeticException.class, () -> GanzzahlUebungen.dividiere(10, 0));
     }
 
     @Test
