@@ -18,7 +18,8 @@ public class ArraysUebungen {
     }
 
     public static void aendereEintragAnIndex3(int[] zahlen, int neuerWert) {
-        // FIXME: Diese Methode soll den Eintrag an Stelle 3 auf den Wert neuerWert ändern.
+        // FIXME: Diese Methode soll den Eintrag an Stelle 3 auf den Wert neuerWert ändern. Mit welchem Index beginnt ein Array in Java? Wie viele Zahlen sind
+        //  vor dem Index 3?
     }
 
     public static void aendereEintragAnIndexI(int[] zahlen, int index, int neuerWert) {
