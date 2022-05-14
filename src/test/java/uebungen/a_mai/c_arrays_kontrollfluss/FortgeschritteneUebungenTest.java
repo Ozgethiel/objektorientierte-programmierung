@@ -62,8 +62,15 @@ class FortgeschritteneUebungenTest {
     }
 
     @Test
+    void siebDesEratosthenesGrosseZahlen() {
+        boolean[] result = FortgeschritteneUebungen.siebDesEratosthenes(100000);
+
+        assertThat(result).hasSize(100000);
+    }
+
+    @Test
     void sortieren() {
-        final int anzahlZahlen = 20;
+        final int anzahlZahlen = 2000;
         final double maxWert = 100.0d;
         int[] zahlen = new int[anzahlZahlen];
         int[] sortiert = new int[anzahlZahlen];
