@@ -65,7 +65,7 @@ public class ArraysUndKontrollflussUebungen {
         return null;
     }
 
-    public static int[] erntfernen(int[] zahlen, int index) {
+    public static int[] entfernen(int[] zahlen, int index) {
         // FIXME: Diese Funktion soll ein Array zurückgeben, das ein Element weniger enthält als zahlen.
         //  Es sollen alle Zahlen aus zahlen in der selben Reihenfolge enthalten sein, außer der Zahl mit dem Index index.
         return null;

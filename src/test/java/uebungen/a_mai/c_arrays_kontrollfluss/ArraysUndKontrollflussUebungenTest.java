@@ -88,7 +88,7 @@ class ArraysUndKontrollflussUebungenTest {
     void entfernen() {
         int[] zahlen = {0, 1, 2, 3};
 
-        int[] ergebnis = ArraysUndKontrollflussUebungen.erntfernen(zahlen, 1);
+        int[] ergebnis = ArraysUndKontrollflussUebungen.entfernen(zahlen, 1);
 
         assertThat(ergebnis).containsExactly(0, 2, 3);
     }
