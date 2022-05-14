@@ -21,16 +21,22 @@ class FortgeschritteneUebungenTest {
     }
 
     @Test
-    void umkehrenMitGeraderAnzahl() {
-        int[] zahlen = {0, 1, 2, 3};
+    void dame() {
+        char[][] dame = FortgeschritteneUebungen.dame();
 
-        FortgeschritteneUebungen.umkehren(zahlen);
-
-        assertThat(zahlen).containsExactly(3, 2, 1, 0);
+        assertThat(dame).hasDimensions(8, 8);
+        assertThat(dame).contains(new char[]{'W', ' ', 'W', ' ', 'W', ' ', 'W', ' '}, atIndex(0));
+        assertThat(dame).contains(new char[]{' ', 'W', ' ', 'W', ' ', 'W', ' ', 'W'}, atIndex(1));
+        assertThat(dame).contains(new char[]{'W', ' ', 'W', ' ', 'W', ' ', 'W', ' '}, atIndex(2));
+        assertThat(dame).contains(new char[]{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '}, atIndex(3));
+        assertThat(dame).contains(new char[]{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '}, atIndex(4));
+        assertThat(dame).contains(new char[]{' ', 'S', ' ', 'S', ' ', 'S', ' ', 'S'}, atIndex(5));
+        assertThat(dame).contains(new char[]{'S', ' ', 'S', ' ', 'S', ' ', 'S', ' '}, atIndex(6));
+        assertThat(dame).contains(new char[]{' ', 'S', ' ', 'S', ' ', 'S', ' ', 'S'}, atIndex(7));
     }
 
     @Test
-    void umkehrenGeradeAnzahl() {
+    void umkehrenMitGeraderAnzahl() {
         int[] zahlen = {0, 1, 2, 3};
 
         FortgeschritteneUebungen.umkehren(zahlen);

@@ -7,6 +7,19 @@ public class FortgeschritteneUebungen {
         //  Beispiel: Aus 1,2,3 wird 3,2,1
     }
 
+    public static char[][] dame() {
+        // FIXME: Diese Methode soll ein 2-dimensionales char-Array erzeugen. Das Array soll die Start-Aufstellung in einem Dame-Feld repräsentieren.
+        //  In Deutschland hat ein Dame Feld 8x8 Felder. Jeder Spieler hat 12 Spielsteine. Es gibt 2 Spieler: schwarz und weis.
+        //  https://de.wikipedia.org/wiki/Dame_(Spiel)#/media/Datei:Damiera_cropped_mirrored.JPG
+        //  Diese Methode soll ein solches Spielfeld erzeugen.
+        //  Wenn auf dem Feld kein Spielstein liegt, soll der Eintrag ein Leerzeichen enthalten.
+        //  Wenn auf dem Feld ein schwarzer Stein liegt, soll der Eintrag ein großes S enthalten.
+        //  Wenn auf dem Feld ein weißer Stein liegt, soll der Eintrag ein großes W enthalten.
+        //  Der erste Index identifiziert die Zeilen, der zweite Index die Spalten.
+        //  Die weißen Steine sind in den ersten 3 Zeilen aufgestellt, die schwarzen Steine sind den letzten 3 Zeilen aufgestellt.
+        return null;
+    }
+
     public static boolean[] siebDesEratosthenes(int max) {
         // FIXME: Das Sieb des Eratosthenes ist ein Algorithmus zur Bestimmung der Primzahlen. Hier sollen alle Primzahlen bis zu einer Zahl kleiner max
         //  bestimmt werden. Der Algorithmus funktioniert wie folgt:
