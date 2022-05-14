@@ -2,6 +2,11 @@ package uebungen.a_mai.c_arrays_kontrollfluss;
 
 public class FortgeschritteneUebungen {
 
+    public static void umkehren(int[] zahlen) {
+        // FIXME: Diese Funktion soll die Zahlen im Array zahlen in umgekehrter Reihenfolge in das selbe Array speichern.
+        //  Beispiel: Aus 1,2,3 wird 3,2,1
+    }
+
     public static boolean[] siebDesEratosthenes(int max) {
         // FIXME: Das Sieb des Eratosthenes ist ein Algorithmus zur Bestimmung der Primzahlen. Hier sollen alle Primzahlen bis zu einer Zahl kleiner max
         //  bestimmt werden. Der Algorithmus funktioniert wie folgt:

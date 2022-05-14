@@ -12,6 +12,24 @@ import static org.junit.jupiter.api.Assertions.*;
 class FortgeschritteneUebungenTest {
 
     @Test
+    void umkehren() {
+        int[] zahlen = {0, 1, 2};
+
+        FortgeschritteneUebungen.umkehren(zahlen);
+
+        assertThat(zahlen).containsExactly(2, 1, 0);
+    }
+
+    @Test
+    void umkehrenGeradeAnzahl() {
+        int[] zahlen = {0, 1, 2, 3};
+
+        FortgeschritteneUebungen.umkehren(zahlen);
+
+        assertThat(zahlen).containsExactly(3, 2, 1, 0);
+    }
+
+    @Test
     void siebDesEratosthenes() {
         boolean[] result = FortgeschritteneUebungen.siebDesEratosthenes(10);
 

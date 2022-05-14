@@ -1,6 +1,6 @@
 package uebungen.a_mai.c_arrays_kontrollfluss;
 
-public class ArraysUndKontrollflussUebungen {
+public class ArraysUebungen {
 
     public static int[] leeresArray() {
         // FIXME: Diese Methode soll ein leeres Array vom Typ int erzeugen. Es soll 10 Elemente beinhalten.
@@ -48,16 +48,6 @@ public class ArraysUndKontrollflussUebungen {
         return null;
     }
 
-    public static int[] groesserAlsPi(double[] zahlen) {
-        // FIXME: Diese Methode soll ein Array vom Typ int erzeugen. Dieses Array enthält genau die Indizes aus zahlen, die größer als PI sind.
-        //  Wie viele Elemente halt das zahlen-Array? Wie viele Elemente hat das zurückgegebene Array? Muss die Anzahl gleich sein?
-        //  Schaffst du es, ein Array zu erzeugen, das nicht größer ist, als es sein muss?
-        //  Tipp: Math.PI enthält den genauen Wert für PI (ca. 3.14)
-        //  Beispiel: zahlen enthält 5, 3 und 4, dann soll ein Array zurückgegeben werden, das die Indizes von den Zahlen 5 und 4 enthält, also 0 und 2.
-        double pi = Math.PI;
-        return null;
-    }
-
     public static int[] hinzufuegen(int[] zahlen, int neueZahl) {
         // FIXME: Diese Funktion soll ein Array zurückgeben, das ein Element mehr enthält als zahlen.
         //  Außerdem sollen alle Zahlen aus zahlen in der selben Reihenfolge enthalten sein.
@@ -71,9 +61,14 @@ public class ArraysUndKontrollflussUebungen {
         return null;
     }
 
-    public static void umkehren(int[] zahlen) {
-        // FIXME: Diese Funktion soll die Zahlen im Array zahlen in umgekehrter Reihenfolge in das selbe Array speichern.
-        //  Beispiel: Aus 1,2,3 wird 3,2,1
+    public static int[] groesserAlsPi(double[] zahlen) {
+        // FIXME: Diese Methode soll ein Array vom Typ int erzeugen. Dieses Array enthält genau die Indizes aus zahlen, die größer als PI sind.
+        //  Wie viele Elemente halt das zahlen-Array? Wie viele Elemente hat das zurückgegebene Array? Muss die Anzahl gleich sein?
+        //  Schaffst du es, ein Array zu erzeugen, das nicht größer ist, als es sein muss?
+        //  Tipp: Math.PI enthält den genauen Wert für PI (ca. 3.14)
+        //  Beispiel: zahlen enthält 5, 3 und 4, dann soll ein Array zurückgegeben werden, das die Indizes von den Zahlen 5 und 4 enthält, also 0 und 2.
+        double pi = Math.PI;
+        return null;
     }
 
 }
