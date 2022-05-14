@@ -18,8 +18,8 @@ public class BooleanUebungen {
 
     public static void istFalsch(boolean a){
         // FIXME Hier soll geprüft werden, ob der Wert a false ist.
-        //  Wenn der Wert in a true ist, soll der Wert true auf der Konsole ausgegeben werden.
-        //  Wenn der Wert in a false ist, soll der Wert false auf der Konsole ausgegeben werden.
+        //  Wenn der Wert in a false ist, soll der Wert true auf der Konsole ausgegeben werden.
+        //  Wenn der Wert in a true ist, soll der Wert false auf der Konsole ausgegeben werden.
     }
 
     public static void istGleich(boolean a, boolean b) {
