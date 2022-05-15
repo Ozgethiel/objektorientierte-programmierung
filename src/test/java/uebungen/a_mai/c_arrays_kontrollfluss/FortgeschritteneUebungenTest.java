@@ -2,6 +2,7 @@ package uebungen.a_mai.c_arrays_kontrollfluss;
 
 import org.assertj.core.data.Index;
 import org.junit.jupiter.api.Test;
+import uebungen.a_mai.SystemOutMockingTest;
 
 import java.util.Arrays;
 
@@ -9,7 +10,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.data.Index.atIndex;
 import static org.junit.jupiter.api.Assertions.*;
 
-class FortgeschritteneUebungenTest {
+class FortgeschritteneUebungenTest extends SystemOutMockingTest {
 
     @Test
     void umkehrenMitUngeraderAnzahl() {
@@ -83,5 +84,19 @@ class FortgeschritteneUebungenTest {
         FortgeschritteneUebungen.sortieren(zahlen);
 
         assertThat(zahlen).containsExactly(sortiert);
+    }
+
+    @Test
+    void roemischeZahlen1964() {
+        FortgeschritteneUebungen.roemischeZahlen(1964);
+
+        assertSystemOutEquals("MDCDLXIV");
+    }
+
+    @Test
+    void roemischeZahlen1666() {
+        FortgeschritteneUebungen.roemischeZahlen(1666);
+
+        assertSystemOutEquals("MDCLXVI");
     }
 }

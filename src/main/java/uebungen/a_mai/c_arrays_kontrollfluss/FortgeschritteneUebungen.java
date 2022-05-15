@@ -40,4 +40,21 @@ public class FortgeschritteneUebungen {
         // FIXME: Die Zahlen im Array zahlen sind durcheinander geraten. Bitte sortiert die Zahlen aufsteigend nach ihrer Größe.
         //  Beispiel: aus 3,1,2 soll 1,2,3 werden.
     }
+
+    public static void roemischeZahlen(int dezimal) {
+        // FIXME: Die Zahl dezimal soll als römische Zahl ausgegeben werden.
+        //  Römer zählten mit Buchstaben.
+        //  1000 = M
+        //  500 = D
+        //  100 = C
+        //  50 = L
+        //  10 = X
+        //  5 = V
+        //  1 = I
+        //  Es werden aber nie 4 gleiche Zeichen hintereinander ausgegeben. Wenn z.B. eine 4 ausgegeben werden soll, wird stattdessen die nächstgrößere
+        //  Ziffer um die kleinere verringert, indem sie vor die größere geschrieben wird.
+        //  Beispiele: 4 = IV, 90 = XM
+        //  Die einzelnen Buchstaben können mit System.out.print(char); ausgegeben werden. Bitte gebt nach eurer Ausgabe noch ein Leerzeichen mit
+        //  System.out.println(); aus.
+    }
 }
