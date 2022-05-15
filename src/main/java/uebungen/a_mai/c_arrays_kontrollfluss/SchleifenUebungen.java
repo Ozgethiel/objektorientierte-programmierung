@@ -14,17 +14,18 @@ public class SchleifenUebungen {
         Thread.sleep(10);
     }
 
-    public static boolean alkohol(int[] alter) {
-        // FIXME: Du bist KassiererIn im Supermarkt. Einige Jugendliche wollen Alkohol kaufen. Du fragst sie nach ihrem Alter. Die Jugendlichen haben in der
-        //  Schule schon Informatik gelernt und übergeben dir ihr Alter in einem int-Array. Du musst jetzt prüfen, ob die Jugendlichen den Alkohol kaufen
-        //  dürfen, oder nicht. Wenn eine Person mindestens 18 Jahre alt ist, darf sie den Alkohol kaufen. Wenn keiner in der Gruppe 18 ist, dürfen sie keinen
-        //  Alkohol kaufen.
-        //  Diese Methode soll einen boolean zurückgeben, ob die Jugendlichen Alkohol kaufen dürfen (true), oder nicht (false).
-        //  Versuche hier die Schleife möglichst sofort abzubrechen um die Schleife nicht öfter als nötig zu durchlaufen.
-        return false;
-    }
-
     public static void zaehlen() {
         // FIXME: Gib die Zahlen von 10 (inklusive) bis 20 (exklusive) auf der Konsole aus.
+    }
+
+    public static int gluecksspiel(int startgeld, int glueckszahl) {
+        // FIXME: Ihr seid im Casino und würfelt. Ihr habt startgeld Euro mitgenommen und setzt immer auf eure Glückszahl glueckszahl. Wenn ihr eure
+        //  Glückszahl würfelt, bekommt ihr den doppelten Einsatz zurück. Ihr setzt immer einen Euro.
+        //  Wie lange dauert es, bis ihr pleite seid? Wie oft könnt ihr würfeln?
+        //  Ein Würfelwurf soll mit der Methode Math.random() simuliert werden. Die Methode gibt Zufallszahlen im Bereich 0-1 als double zurück.
+        //  startgeld ist immer eine Zahl größer 0, glückszahl ist immer eine Zahl zwischen 1 und 6 (inclusive).
+        //  Gib jeden Würfelwurf auf der Konsole aus.
+        double zufallszahl = Math.random();
+        return 0;
     }
 }
