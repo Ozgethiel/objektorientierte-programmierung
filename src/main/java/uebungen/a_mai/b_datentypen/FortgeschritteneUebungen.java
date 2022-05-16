@@ -6,7 +6,16 @@ public class FortgeschritteneUebungen {
         // FIXME: Es soll geprüft werden, ob a kleiner als b und größer als c ist.
         //  Wenn das Ergebnis wahr ist, soll true auf der Konsole ausgegeben werden.
         //  Ansonsten soll false auf der Konsole ausgegeben werden.
+
+        if (a < b && a > c) {
+            System.out.println("true");
+        } else {
+            System.out.println("false");
+        }
     }
+
+    public static final int VALUE_OF_A = 'a';
+    public static final int VALUE_OF_Z = 'z';
 
     public static void ceasarVerschluesselung(char klartext) {
         // FIXME: Ceasar soll damals eine Verschlüsselung benutzt haben, in der jeder Buchstabe durch seinen 5. Nachfolger im Alphabet ersetzt wird.
@@ -14,17 +23,41 @@ public class FortgeschritteneUebungen {
         //  Beispiel: a wird zu f, b wird zu g
         //  VORSICHT! Was passiert mit z? Bei z geht es wieder von vorne los. Aber wie geht das?
         //  Gib den verschlüsselten Buchstaben auf der Konsole aus. Es werden nur kleine Buchstaben zwischen a und z verwendet.
+
+        int valueOfChar = (int) klartext;
+        //System.out.println(valueOfChar);
+        int encodedValue = valueOfChar + 5;
+        int fixedRange;
+        if (encodedValue < VALUE_OF_Z + 1) {
+            fixedRange = encodedValue;
+        } else {
+            fixedRange = VALUE_OF_A + encodedValue - (VALUE_OF_Z + 1);
+        }
+        char encodedChar = (char) fixedRange;
+
+        System.out.println(encodedChar);
     }
 
     public static void restwertBeiKommazahlen(double a, double b) {
         // FIXME: Der Restwert bei der Division der Variablen a und b soll berechnet werden.
         //  Ist das überhaupt möglich? Mit welchen Einschränkungen ginge das?
         //  Gib den ganzzahligen Restwert auf der Konsole aus.
+
+        while (b <= a) {
+            a = a - b;
+        }
+        System.out.println((int) a);
     }
 
     public static void abrunden(double a) {
         // FIXME: Die Zahl a soll ab der 3. Nachkommastelle abgerundet werden.
         //  Beispiel: Aus PI (3.14159265359...) würde 3.141
-    }
+        double x = a * 1000;
+        int e = (int) x;
 
+        //a = Math.round(100.0 * a) / 100.0;
+
+        System.out.println((double) e / 1000);
+    }
 }
+
