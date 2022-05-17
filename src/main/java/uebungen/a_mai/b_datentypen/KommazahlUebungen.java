@@ -5,7 +5,7 @@ public class KommazahlUebungen {
     public static void pi() {
         // FIXME Hier soll die Zahl PI (ca. 3,14) mit 2 Nachkommastellen Genauigkeit in eine double Variable gespeichert und auf der Konsole ausgegeben werden.
         double pi= 3.14;
-        System.out.println(pi);
+        System.out.print(pi);
 
     }
 

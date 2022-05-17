@@ -66,6 +66,6 @@ public class GanzzahlUebungen {
     public static void durchschnitt(int a, int b, int c) {
         // FIXME Hier soll der Durchschnitt von den Zahlen a, b und c auf der Konsole ausgegeben werden.
         //  Ist das Ergebnis nicht ganzzahlig, soll immer abgerundet werden.
-        System.out.println((a+b+c)/3);
+        System.out.print((a+b+c)/3);
     }
 }

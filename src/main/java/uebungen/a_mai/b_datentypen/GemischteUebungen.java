@@ -5,7 +5,7 @@ public class GemischteUebungen {
     public static void ganzzahlenSindGleich(int a, int b) {
         // FIXME Wenn a und b gleich sind, soll das Ergebnis als boolean auf der Konsole ausgegeben werden.
         if(a == b){
-            System.out.println("true");
+            System.out.print("true");
 
         }
     }

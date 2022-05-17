@@ -4,7 +4,7 @@ public class BooleanUebungen {
 
     public static void wahr(){
         // FIXME Hier soll der Wert true auf der Konsole ausgegeben werden.
-        System.out.println(true);
+        System.out.print(true);
     }
 
     public static void falsch(){

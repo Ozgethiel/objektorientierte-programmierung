@@ -11,7 +11,7 @@ public class CharUebungen {
     public static void sonderzeichenTab() {
         // FIXME Hier soll das Sonderzeichen Tab auf der Konsole ausgegeben werden.
         char s = '\t';
-        System.out.print(s);
+        System.out.println(s);
     }
 
     public static void grossbuchstabe(char kleinbuchstabe) {
