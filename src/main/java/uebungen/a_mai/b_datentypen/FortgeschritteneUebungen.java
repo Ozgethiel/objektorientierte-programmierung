@@ -14,8 +14,7 @@ public class FortgeschritteneUebungen {
         }
     }
 
-    public static final int VALUE_OF_A = 'a';
-    public static final int VALUE_OF_Z = 'z';
+
 
     public static void ceasarVerschluesselung(char klartext) {
         // FIXME: Ceasar soll damals eine Verschlüsselung benutzt haben, in der jeder Buchstabe durch seinen 5. Nachfolger im Alphabet ersetzt wird.
@@ -24,18 +23,7 @@ public class FortgeschritteneUebungen {
         //  VORSICHT! Was passiert mit z? Bei z geht es wieder von vorne los. Aber wie geht das?
         //  Gib den verschlüsselten Buchstaben auf der Konsole aus. Es werden nur kleine Buchstaben zwischen a und z verwendet.
 
-        int valueOfChar = (int) klartext;
-        //System.out.println(valueOfChar);
-        int encodedValue = valueOfChar + 5;
-        int fixedRange;
-        if (encodedValue < VALUE_OF_Z + 1) {
-            fixedRange = encodedValue;
-        } else {
-            fixedRange = VALUE_OF_A + encodedValue - (VALUE_OF_Z + 1);
-        }
-        char encodedChar = (char) fixedRange;
 
-        System.out.println(encodedChar);
     }
 
     public static void restwertBeiKommazahlen(double a, double b) {
