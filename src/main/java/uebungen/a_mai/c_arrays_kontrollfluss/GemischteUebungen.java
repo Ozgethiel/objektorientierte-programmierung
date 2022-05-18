@@ -1,16 +1,6 @@
 package uebungen.a_mai.c_arrays_kontrollfluss;
 
-public class ArraysUndKontrollflussUebungen {
-
-    public static int[] leeresArray() {
-        // FIXME: Diese Methode soll ein leeres Array vom Typ int erzeugen. Es soll 10 Elemente beinhalten.
-        return null;
-    }
-
-    public static int[] primzahlen() {
-        // FIXME: Diese Methode soll die ersten 3 Primzahlen (2,3,5) in ein Array vom Typ int schreiben und zurückgeben.
-        return null;
-    }
+public class GemischteUebungen {
 
     public static int[] zahlenVonNullBisZehn() {
         // FIXME: Diese Methode soll alle ganzen Zahlen von 0 bis 10 (exklusive) in ein Array vom Typ int schreiben und zurückgeben.
@@ -25,19 +15,6 @@ public class ArraysUndKontrollflussUebungen {
         return null;
     }
 
-    public static int laenge(int[] zahlen) {
-        // FIXME: Diese Methode soll die Länge des Array zahlen zurückgeben.
-        return 0;
-    }
-
-    public static void aendereEintragAnIndex3(int[] zahlen, int neuerWert) {
-        // FIXME: Diese Methode soll den Eintrag an Stelle 3 auf den Wert neuerWert ändern.
-    }
-
-    public static void aendereEintragAnIndexI(int[] zahlen, int index, int neuerWert) {
-        // FIXME: Diese Methode soll den Eintrag an Stelle index auf den Wert neuerWert ändern.
-    }
-
     public static boolean[] gerade(int[] zahlen) {
         // FIXME: Diese Methode soll ein boolean-Array erzeugen und zurückgeben.
         //  In dem boolean-Array soll definiert werden, ob die Zahl im Array zahlen gerade oder ungerade ist.
@@ -45,6 +22,19 @@ public class ArraysUndKontrollflussUebungen {
         //  Ist der Eintrag im Zahlen-Array ungerade, soll der Eintrag im boolean-Array false sein.
         //  Beispiel: zahlen hat 3 Einträge. 1. Eintrag = 5, 2. Eintrag = 10, 3. Eintrag = 7
         //  Erwartetes Ergebnis wäre dann ein boolean Array mit 3 Einträgen. 1. Eintrag = false, 2. Eintrag = true, 3. Eintrag = false
+        return null;
+    }
+
+    public static int[] hinzufuegen(int[] zahlen, int neueZahl) {
+        // FIXME: Diese Funktion soll ein Array zurückgeben, das ein Element mehr enthält als zahlen.
+        //  Außerdem sollen alle Zahlen aus zahlen in der selben Reihenfolge enthalten sein.
+        //  Zusätzlich soll an letzten Stelle die Zahl neueZahl gespeichert werden.
+        return null;
+    }
+
+    public static int[] entfernen(int[] zahlen, int index) {
+        // FIXME: Diese Funktion soll ein Array zurückgeben, das ein Element weniger enthält als zahlen.
+        //  Es sollen alle Zahlen aus zahlen in der selben Reihenfolge enthalten sein, außer der Zahl mit dem Index index.
         return null;
     }
 
@@ -58,22 +48,12 @@ public class ArraysUndKontrollflussUebungen {
         return null;
     }
 
-    public static int[] hinzufuegen(int[] zahlen, int neueZahl) {
-        // FIXME: Diese Funktion soll ein Array zurückgeben, das ein Element mehr enthält als zahlen.
-        //  Außerdem sollen alle Zahlen aus zahlen in der selben Reihenfolge enthalten sein.
-        //  Zusätzlich soll an letzten Stelle die Zahl neueZahl gespeichert werden.
-        return null;
+    public static void ceasarVerschluesselung(char[] zeichenkette) {
+        // FIXME: Erinnerst du dich an die Ceasar Übung in FortgeschritteneUebungen? Hier sollst du das selbe mit einem char-Array machen.
+        //  Übergeben wird ein char-Array zeichenkette. Das Array enthält nur Kleinbuchstaben von a - z und Leerzeichen.
+        //  Verschlüssle jedes char-Element einzeln.
+        //  Wenn ein char ein Leerzeichen sein sollte, wird dies nicht verschlüsselt.
+        //  Speichere den verschlüsselten Text in dem selben Array zeichenkette.
+        //  Das ist nur eine Übung! Normalerweise würde man hier einen String verwenden, statt einem char-Array!
     }
-
-    public static int[] erntfernen(int[] zahlen, int index) {
-        // FIXME: Diese Funktion soll ein Array zurückgeben, das ein Element weniger enthält als zahlen.
-        //  Es sollen alle Zahlen aus zahlen in der selben Reihenfolge enthalten sein, außer der Zahl mit dem Index index.
-        return null;
-    }
-
-    public static void umkehren(int[] zahlen) {
-        // FIXME: Diese Funktion soll die Zahlen im Array zahlen in umgekehrter Reihenfolge in das selbe Array speichern.
-        //  Beispiel: Aus 1,2,3 wird 3,2,1
-    }
-
 }

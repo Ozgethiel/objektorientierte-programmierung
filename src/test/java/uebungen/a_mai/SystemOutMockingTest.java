@@ -9,7 +9,7 @@ import java.io.PrintStream;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class SystemOutMockingTest {
-    protected final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+    private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private final PrintStream originalOut = System.out;
 
     @BeforeEach
@@ -23,7 +23,12 @@ public class SystemOutMockingTest {
     }
 
     protected void assertSystemOutEquals(String expected) {
-        String outString = outContent.toString();
-        assertThat(outString.trim()).isEqualTo(expected);
+        String outString = getSystemOutContent();
+        originalOut.println(outString);
+        assertThat(outString.substring(0, outString.length() > System.lineSeparator().length() ? outString.length() - System.lineSeparator().length() : 0)).isEqualTo(expected);
+    }
+
+    protected String getSystemOutContent() {
+        return outContent.toString();
     }
 }
