@@ -61,7 +61,7 @@ public class FortgeschritteneUebungen {
         //  Math.sqrt(double) berechnet die Wurzel aus einer Zahl.
         int wurzelAusMax = (int) Math.sqrt(max);
 
-        return null;
+        return null; //
     }
 
     public static void sortieren(int[] zahlen) {
