@@ -83,6 +83,23 @@ public class GemischteUebungen {
         //  Tipp: Math.PI enthält den genauen Wert für PI (ca. 3.14)
         //  Beispiel: zahlen enthält 5, 3 und 4, dann soll ein Array zurückgegeben werden, das die Indizes von den Zahlen 5 und 4 enthält, also 0 und 2.
         double pi = Math.PI;
+        int len = zahlen.length;
+        int[] indicesBiggerThanPi = new int[len];
+        int bigger = 0;
+        for (int i = 0; i < len; i++) {
+            if (zahlen[i] > pi) {
+                indicesBiggerThanPi[bigger] = i;
+                bigger++;
+            }
+        }
+        while (bigger < len) {
+            indicesBiggerThanPi = entfernen(indicesBiggerThanPi, len - 1);
+            len--;
+        }
+
+        return indicesBiggerThanPi;
+
+
 
 
     }
