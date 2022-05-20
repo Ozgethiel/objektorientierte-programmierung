@@ -43,9 +43,10 @@ public class FortgeschritteneUebungen {
         double x = a * 1000;
         int e = (int) x;
 
-        //a = Math.round(100.0 * a) / 100.0;
+        //a = Math.round(1000 * a) / 1000;
 
         System.out.println((double) e / 1000);
+        //System.out.println(a);
     }
 }
 
