@@ -1,4 +1,4 @@
-package uebungen.b_juni.g_icecream;
+package uebungen.b_juni.h_icecream;
 
 public class Main {
 
