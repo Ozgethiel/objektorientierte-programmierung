@@ -23,6 +23,10 @@ public class Ship {
         //     Nutzt die Bibliothek JodaTime und insb. die Klasse org.joda.time.DateTime.
         //     In eurem Test könnt ihr mit der Methode org.joda.time.DateTimeUtils.setCurrentMillisFixed(long l)
         //     eine feste Zeit einspeichern, die dann von der Klasse DateTime verwendet wird.
+        //     Details zu den Klassen findet ihr hier:
+        //     https://www.joda.org/joda-time/apidocs/org/joda/time/DateTime.html
+        //     https://www.joda.org/joda-time/apidocs/org/joda/time/DateTimeUtils.html#setCurrentMillisFixed-long-
+        //     https://www.joda.org/joda-time/apidocs/org/joda/time/DateTimeUtils.html#setCurrentMillisSystem--
         //  7. Ein Elektrogerät kann eine Beschreibung liefern. Überschreibt dazu die toString() Methode
         //     der Klasse java.lang.Object und gebt Folgendes zurück:
         //     z.B. "Das Elektrogerät ist aus" oder "Das Elektrogerät ist an"
