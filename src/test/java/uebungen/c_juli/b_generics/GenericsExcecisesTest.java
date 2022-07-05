@@ -20,7 +20,7 @@ class GenericsExcecisesTest {
 
     @Test
     void numbersFromZeroToTenAsInt() {
-        Object result = GenericsExcecises.numbersFromZeroToTenAsString();
+        Object result = GenericsExcecises.numbersFromZeroToTenAsInt();
 
         assertThat(result).isInstanceOf(ArrayList.class);
         assertThat((List<Integer>) result).contains(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
@@ -31,7 +31,6 @@ class GenericsExcecisesTest {
         Box result = GenericsExcecises.wrap("abc");
 
         assertThat(result).isInstanceOf(Box.class);
-        assertThat(result.getClass().getGenericInterfaces()).contains(String.class);
         assertThat(result.getContent()).isEqualTo("abc");
     }
 
@@ -48,7 +47,6 @@ class GenericsExcecisesTest {
         Box result = GenericsExcecises.wrap(123);
 
         assertThat(result).isInstanceOf(Box.class);
-        assertThat(result.getClass().getGenericInterfaces()).contains(Integer.class);
         assertThat(result.getContent()).isEqualTo(123);
     }
 

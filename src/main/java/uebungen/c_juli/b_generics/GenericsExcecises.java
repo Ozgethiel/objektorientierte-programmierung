@@ -21,8 +21,8 @@ public class GenericsExcecises {
     }
 
     public static Box wrap(Object o) {
-        // FIXME: Ändert die Klasse Box und diese Methode so, dass sie Generics
-        //  verwendet.
+        // FIXME: Ändert die Klasse Box und diese Methode so, dass sie statt
+        //  Object Generics verwendet.
         return new Box(o);
     }
 
