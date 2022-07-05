@@ -14,7 +14,7 @@ class ExceptionExercisesTest {
     }
 
     @Test
-    void testThrowArgumentException() throws InterruptedException {
+    void testSleepOneSecond() throws InterruptedException {
         long before = System.currentTimeMillis();
 
         ExceptionExercises.sleepOneSecond();
@@ -23,4 +23,16 @@ class ExceptionExercisesTest {
 
         assertThat(after - before).isCloseTo(1000, withPercentage(10));
     }
+
+    @Test
+    void sleepOneSecondDoNotThrow() {
+        long before = System.currentTimeMillis();
+
+        ExceptionExercises.sleepOneSecondDoNotThrow();
+
+        long after = System.currentTimeMillis();
+
+        assertThat(after - before).isCloseTo(1000, withPercentage(1));
+    }
+
 }

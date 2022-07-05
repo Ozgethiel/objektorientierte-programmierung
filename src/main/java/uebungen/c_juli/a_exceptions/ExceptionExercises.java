@@ -16,14 +16,13 @@ public class ExceptionExercises {
         // Thread.sleep(1000);
     }
 
-    public static int sleepOneSecondDoNotThrow() {
+    public static long sleepOneSecondDoNotThrow() {
         // FIXME: Diese Methode soll einfach nur eine Sekunde schlafen.
         //  Thread.sleep() wirft aber eine Exception vom Typ InterruptedException.
         //  Diesmal soll die Exception abgefangen werden. Wenn die Exception fliegt,
         //  und noch nicht lange genug gewartet wurde, soll die Methode weiter warten.
         //  Die Methode soll dann die Zeit, die beim Warten vergangen ist in
-        //  Millisekunden zurückgeben.
-        // Thread.sleep(1000);
-        return 0;
+        //  Millisekunden zurückgeben. Die Methode darf nicht mehr als 10 ms zu viel
+        //  warten.
     }
 }
