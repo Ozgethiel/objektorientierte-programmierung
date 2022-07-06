@@ -24,5 +24,6 @@ public class ExceptionExercises {
         //  Die Methode soll dann die Zeit, die beim Warten vergangen ist in
         //  Millisekunden zurückgeben. Die Methode darf nicht mehr als 10 ms zu viel
         //  warten.
+        return 0L;
     }
 }
