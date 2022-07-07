@@ -1,8 +1,5 @@
 package uebungen.c_juli.c_pairs;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Translator {
 
     public static void main(String[] args) {
