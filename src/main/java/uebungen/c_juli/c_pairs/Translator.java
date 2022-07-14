@@ -89,6 +89,25 @@ public class Translator {
         //  Hinweis: Mit List.of() könnt ihr schnell und einfach Listen mit
         //  festen Werten erzeugen.
 
+        Map<Integer, String> myMap = new Map<>();
+        myMap.put(2, "Zwei");
+        myMap.put(3, "Drei");
+        myMap.put(5, "Fünf");
+        myMap.put(8, "Acht");
+        System.out.println(myMap.flip());
+
+        // Aufgabe 13
+        List<Integer> numbers = List.of(2, 8, 3, 5, 5);
+
+        List<String> translatedNumbers = translate(numbers, myMap);
+        System.out.println(translatedNumbers);
+
+        // Aufgabe 17
+        List<String> naturalLanguage= List.of("Zwei","Acht","Drei","Fünf","Fünf");
+        List<Integer> translated= translate(naturalLanguage,myMap.flip());
+        System.out.println(translated);
+
+        // Aufgaben 18 + 19
         Map<String,String> germanToEnglish = new Map<>();
 
         germanToEnglish.put("Null","Zero");
@@ -102,6 +121,10 @@ public class Translator {
         germanToEnglish.put("Acht","Eight");
         germanToEnglish.put("Neun","Nine");
 
+        String vier = "Vier";
+        String what = germanToEnglish.find(vier);
+        System.out.println(what);
+
         List<String> st = new ArrayList<>();
         st.add("Vier");
         st.add("Eins");
@@ -110,22 +133,6 @@ public class Translator {
 
         List<String> translatedStrings = translate(st, germanToEnglish);
         System.out.println(translatedStrings);
-
-        String vier = "Vier";
-        String what = germanToEnglish.find(vier);
-        System.out.println(what);
-
-        Map<Integer, String> myMap = new Map<>();
-        myMap.put(2, "Zwei");
-        myMap.put(3, "Drei");
-        myMap.put(5, "Fünf");
-        myMap.put(8, "Acht");
-
-        List<Integer> numbers = List.of(2, 8, 3, 5, 5);
-
-        List<String> translatedNumbers = translate(numbers, myMap);
-        System.out.println(translatedNumbers);
-
     }
 
 
@@ -144,6 +151,7 @@ public class Translator {
 
 
     }
+
     public static<V> void print(List<V>v){
         String s="";
 
@@ -153,4 +161,5 @@ public class Translator {
         }
         System.out.println(s);
     }
+
 }
