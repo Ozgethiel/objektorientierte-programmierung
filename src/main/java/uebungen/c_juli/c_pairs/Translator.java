@@ -1,5 +1,8 @@
 package uebungen.c_juli.c_pairs;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Translator {
 
     public static void main(String[] args) {
@@ -85,5 +88,69 @@ public class Translator {
         //      zu übersetzen.
         //  Hinweis: Mit List.of() könnt ihr schnell und einfach Listen mit
         //  festen Werten erzeugen.
+
+        Map<String,String> germanToEnglish = new Map<>();
+
+        germanToEnglish.put("Null","Zero");
+        germanToEnglish.put("Eins","One");
+        germanToEnglish.put("Zwei","Two");
+        germanToEnglish.put("Drei","Three");
+        germanToEnglish.put("Vier","Four");
+        germanToEnglish.put("Fünf","Five");
+        germanToEnglish.put("Sechs","Six");
+        germanToEnglish.put("Sieben","Seven");
+        germanToEnglish.put("Acht","Eight");
+        germanToEnglish.put("Neun","Nine");
+
+        List<String> st = new ArrayList<>();
+        st.add("Vier");
+        st.add("Eins");
+        st.add("Neun");
+        st.add("Sieben");
+
+        List<String> translatedStrings = translate(st, germanToEnglish);
+        System.out.println(translatedStrings);
+
+        String vier = "Vier";
+        String what = germanToEnglish.find(vier);
+        System.out.println(what);
+
+        Map<Integer, String> myMap = new Map<>();
+        myMap.put(2, "Zwei");
+        myMap.put(3, "Drei");
+        myMap.put(5, "Fünf");
+        myMap.put(8, "Acht");
+
+        List<Integer> numbers = List.of(2, 8, 3, 5, 5);
+
+        List<String> translatedNumbers = translate(numbers, myMap);
+        System.out.println(translatedNumbers);
+
+    }
+
+
+    public static <K,V> List<V> translate(List<K> keyList, Map<K,V> keyValueMap){
+        List<V> result = new ArrayList<>();
+
+        for(int i =0; i< keyList.size(); i++){
+
+            K key = keyList.get(i);
+            V value = keyValueMap.find(key);
+            result.add(value);
+
+
+        }
+         return result;
+
+
+    }
+    public static<V> void print(List<V>v){
+        String s="";
+
+        for(V va:v) {
+            s = s + "{" + va + "}";
+
+        }
+        System.out.println(s);
     }
 }
