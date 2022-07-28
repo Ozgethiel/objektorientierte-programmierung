@@ -11,7 +11,7 @@ public class Map<K, V> {
     }
 
     public void put(K key, V value) {
-        Pair pair = new Pair(key, value);
+        Pair<K,V> pair = new Pair<>(key, value);
         pairs.add(pair);
     }
 

@@ -14,6 +14,49 @@ public class Main {
         //  eurem Switch auf und gebt den Zustand des Lichts erneut auf der Konsole aus.
         //  Fortgeschritten: Wenn ihr das geschafft habt, erzeugt 3 Schalter und 3 Lichter und schaltet diese an und aus und gebt deren Zustand auf der
         //  Konsole aus.
-        //  Profi: Könnt ihr mit mehreren Schaltern das selbe Licht bedienen? Versucht es!
+        //  Profi: Könnt ihr mit mehreren Scha
+        //  ltern das selbe Licht bedienen? Versucht es!
+        Light light1 = new Light();
+        Switch s1 = new Switch(light1);
+
+        Light light2 = new Light();
+        Switch s2 = new Switch(light2);
+
+        Light light3 = new Light();
+        Switch s3 = new Switch(light3);
+
+        System.out.println("light 1: " + light1.istIlluminated());
+        System.out.println("light 2: " + light2.istIlluminated());
+        System.out.println("light 3: " + light3.istIlluminated());
+        System.out.println();
+
+        s1.toggle();
+        System.out.println("light 1: " + light1.istIlluminated());
+        System.out.println("light 2: " + light2.istIlluminated());
+        System.out.println("light 3: " + light3.istIlluminated());
+        System.out.println();
+
+        s2.toggle();
+        s2.toggle();
+        System.out.println("light 1: " + light1.istIlluminated());
+        System.out.println("light 2: " + light2.istIlluminated());
+        System.out.println("light 3: " + light3.istIlluminated());
+        System.out.println();
+
+        s3.toggle();
+        s3.toggle();
+        s3.toggle();
+        System.out.println("light 1: " + light1.istIlluminated());
+        System.out.println("light 2: " + light2.istIlluminated());
+        System.out.println("light 3: " + light3.istIlluminated());
+        System.out.println();
+
+        // bonus
+        Switch s1too = new Switch(light1);
+        System.out.println("light 1: " + light1.istIlluminated());
+        s1.toggle();
+        System.out.println("light 1: " + light1.istIlluminated());
+        s1too.toggle();
+        System.out.println("light 1: " + light1.istIlluminated());
     }
 }

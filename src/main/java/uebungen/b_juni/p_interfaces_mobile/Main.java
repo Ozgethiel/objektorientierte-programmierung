@@ -44,5 +44,19 @@ public class Main {
         // Schreibt die Klassen Star und Wire und legt in dieser main Methode das oben skizzierte Mobile an,
         // balanciert das Mobile aus und gebt es dann aus. Dabei sollten sich die in der Skizze angegebenen
         // Knotenpositionen ergeben.
+        Star a = new Star(2);
+        Star b = new Star (4);
+        Star c = new Star(9);
+        a.balance();
+        b.balance();
+        c.balance();
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+
+       a.toString();
+       b.toString();
+
+
     }
 }

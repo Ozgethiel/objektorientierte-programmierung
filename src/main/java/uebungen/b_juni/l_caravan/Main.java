@@ -15,5 +15,16 @@ public class Main {
         // Ladung abzurufen.
         // Karavane soll eine Methode getMaxPace haben, die die maximale Geschwindigkeit der Karavane
         // bestimmen soll ohne dass ein Kamel das andere überholt oder eine Leine reisst.
+
+        Camel camel1 = new Camel("Thomas", null, 8, 5);
+        Camel camel2= new Camel("Eva", camel1, 5, 2);
+        Camel camel3 = new Camel("Erwin", camel2, 6, 1);
+
+        Caravan caravan = new Caravan(camel3);
+        int paceOfCaravan = caravan.getMaxPace();
+
+        System.out.println("MaxPace is :" + camel3.getPace());
+        System.out.println("jäger");
+
     }
 }

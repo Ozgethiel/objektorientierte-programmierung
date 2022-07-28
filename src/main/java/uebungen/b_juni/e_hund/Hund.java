@@ -6,6 +6,7 @@ public class Hund {
     public Hund(String farbe, Kopf kopf) {
         this.farbe = farbe;
         this.kopf = kopf;
+
     }
     public Kopf getKopf() {
         return kopf;

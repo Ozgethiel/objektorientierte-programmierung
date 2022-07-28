@@ -1,6 +1,7 @@
 package uebungen.b_juni.n_object_exercises;
 
-public class ObjectComparisonExercises {
+public class
+ObjectComparisonExercises {
 
     public static boolean sameInstance(String a, String b){
         // FIXME: Versucht Testgetrieben vorzugehen! Schreibt zuerst mindestens einen Test in der Klasse ObjectComparisonExercisesTest!

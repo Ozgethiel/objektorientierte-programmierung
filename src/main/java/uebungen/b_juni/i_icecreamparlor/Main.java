@@ -1,5 +1,8 @@
 package uebungen.b_juni.i_icecreamparlor;
 
+import uebungen.b_juni.h_icecream.IceCreamCone;
+import uebungen.b_juni.h_icecream.IceCreamScoop;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -10,5 +13,12 @@ public class Main {
         //  Diese Instanz hat für jeden Geschmack im String Parameter eine Instanz IceCreamScoop in ihrem privaten IceCreamScoop Array.
         //  z.B. mit "vanilla chocolate" bestellt man eine Waffel mit 2 Kugeln, Vanille und Schokolade.
 
+
+        String bestellung = " chocolate vanilla";
+        IceCreamParlor parlor = new IceCreamParlor();
+        IceCreamCone cone = parlor.order(bestellung);
+        System.out.println("I got a " + cone);
+
     }
+
 }

@@ -10,7 +10,8 @@ class ExceptionExercisesTest {
 
     @Test
     void testThrowIllegalArgumentException() {
-        assertThrows(IllegalArgumentException.class, ExceptionExercises::throwIllegalArgumentException);
+       IllegalArgumentException e= assertThrows(IllegalArgumentException.class, ExceptionExercises::throwIllegalArgumentException);
+        e.printStackTrace();
     }
 
     @Test

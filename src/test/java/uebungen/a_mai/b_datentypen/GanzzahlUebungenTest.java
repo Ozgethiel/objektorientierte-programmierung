@@ -5,7 +5,9 @@ import uebungen.a_mai.SystemOutMockingTest;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-class GanzzahlUebungenTest extends SystemOutMockingTest {
+class
+
+GanzzahlUebungenTest extends SystemOutMockingTest {
 
     @Test
     void zehn() {

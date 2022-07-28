@@ -90,7 +90,7 @@ class FortgeschritteneUebungenTest extends SystemOutMockingTest {
     void roemischeZahlen1964() {
         FortgeschritteneUebungen.roemischeZahlen(1964);
 
-        assertSystemOutEquals("MDCDLXIV");
+        assertSystemOutEquals("MCMLXIV");
     }
 
     @Test

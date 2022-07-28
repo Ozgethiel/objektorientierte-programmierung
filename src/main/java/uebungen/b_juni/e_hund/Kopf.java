@@ -12,4 +12,6 @@ public class Kopf {
         return augenfarbe;
     }
 
+
+
 }

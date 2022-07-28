@@ -19,5 +19,28 @@ public class Main {
         //  toss Methode der Coin Instanz aufgerufen. Dann wird der Sieger ermittelt. Der Verlierer zahlt dem Gewinner 1 Euro
         //  mithilfe der giveMoney Methode. Geben Sie nach jedem Spiel den Sieger aus und wie viel Geld jeder Spieler noch hat.
         //  Fortgeschritten: Geht das auch mit mehr als nur 2 Spielern?
+
+        Player heads = new Player(100, CoinSide.HEADS);
+        Player tails = new Player(100, CoinSide.TAILS);
+
+        for (int i = 0; i < 10; i++) {
+            CoinSide up = Coin.toss();
+            Player winner;
+            Player loser;
+            if  (heads.getBet() == up) {
+                winner = heads;
+                loser = tails;
+            } else {
+                winner = tails;
+                loser = heads;
+            }
+            System.out.println("Round " + i + ":");
+            System.out.println("Winner is " + winner.getBet());
+            loser.giveMoney(winner);
+
+            System.out.println("Player heads now has " + heads.getMoney() + " €");
+            System.out.println("Player tails now has " + tails.getMoney() + " €");
+            System.out.println();
+        }
     }
 }

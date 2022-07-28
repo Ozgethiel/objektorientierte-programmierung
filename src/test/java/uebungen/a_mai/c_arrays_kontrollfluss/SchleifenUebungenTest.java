@@ -29,6 +29,7 @@ class SchleifenUebungenTest extends SystemOutMockingTest {
     void zaehlen() {
         SchleifenUebungen.zaehlen();
 
+
         String zahlenMitZeilenumbruch = String.join(System.lineSeparator(), "10", "11", "12", "13", "14", "15", "16", "17", "18", "19");
         assertSystemOutEquals(zahlenMitZeilenumbruch);
     }

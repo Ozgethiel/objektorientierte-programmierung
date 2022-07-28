@@ -1,5 +1,7 @@
 package uebungen.b_juni.o_inheritance;
 
+import org.joda.time.DateTime;
+
 public class Ship {
 
     public static void main(String[] args) throws InterruptedException {
@@ -46,6 +48,13 @@ public class Ship {
         // 14. Gebt die Instanzen in dem Array auf der Konsole aus. Nutzt dazu eure toString() Methode.
         //     Versucht einen anderen Batteriezustand von dem Feuermelder abzurufen. Mit dem folgenden Befehl
         //     könnt ihr eine bestimmte Anzahl Millisekunden warten:
+       DateTime vorher = new DateTime();
         Thread.sleep(1000);
+        System.out.println(vorher);
+        DateTime nachher = new DateTime();
+        System.out.println(nachher);
+
+      Radio radio1 = new Radio(true);
+      Radio radio2= new Radio ( true);
     }
 }

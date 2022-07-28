@@ -22,6 +22,16 @@ public class Traveler {
         //  Modelliert die Städte und Flugverbindungen und berechnet mit deren Hilfe
         //  wie viele Kilometer der Mann im Anzug zurückgelegt hat.
 
+        int travelled = 0;
+        // Mo
+        travelled = travelled + Bremen.getDistance(City.FRANKFURT);
+        // Di
+//        travelled = travelled + Frankfurt.getDistance(City.BERLIN);
+        // Mi
+//        ...
+//
+        System.out.println("Der Mann im Anzug hat " + travelled + " km zurückgelegt.");
+
     }
 
 }
