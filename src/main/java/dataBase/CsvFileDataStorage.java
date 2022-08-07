@@ -1,4 +1,4 @@
-package DataBase;
+package dataBase;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
@@ -9,16 +9,19 @@ import java.util.List;
 
 public abstract class CsvFileDataStorage<T extends Entity> implements DataStorage<T> {
 
-
     private final String fileName;
-    private final Path path = Paths.get("C:\\Users\\Akademie\\Desktop");
     private File file;
 
     public CsvFileDataStorage(String fileName) {
         this.fileName = fileName;
-        file = new File(path.getFileName() + "\\" + fileName);
+        file = new File(fileName);
         try {
-            file.createNewFile();
+            boolean fileAlreadyExists = file.createNewFile();
+            if (fileAlreadyExists) {
+                System.out.println("File already exists: " + file);
+            } else {
+                System.out.println("File created: " + file);
+            }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -27,7 +30,7 @@ public abstract class CsvFileDataStorage<T extends Entity> implements DataStorag
 
     protected List<String> getColumns(T entity) {
         List<String> list = new ArrayList<>();
-        String ab = String.valueOf(entity.id);
+        String ab = String.valueOf(entity.getId());
         list.add(ab);
         return list;
 
@@ -59,22 +62,25 @@ public abstract class CsvFileDataStorage<T extends Entity> implements DataStorag
             throw new RuntimeException("Konnte nicht die Datei schreiben");
         }
 
-
     }
 
     @Override
     public List<T> readAll() {
 
-        try{
+        List<T> list = new ArrayList<>();
+        try {
 
             InputStream inputStream = new FileInputStream(file);
             InputStreamReader inputStreamReader = new InputStreamReader(inputStream, StandardCharsets.UTF_8);
             BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+
             String line = bufferedReader.readLine();
            // while((line = bufferedReader.readline())!=null){
 
-
-
+            if (line == null) {
+                System.out.println("File is empty");
+                return list;
+            }
 
             String [] values= line.split(", ");
             T entity = createEntity();
@@ -87,11 +93,7 @@ public abstract class CsvFileDataStorage<T extends Entity> implements DataStorag
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return List.of();
+        return list;
     }
-
-
-
-
 
 }

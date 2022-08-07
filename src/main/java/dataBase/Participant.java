@@ -1,6 +1,6 @@
-package DataBase;
+package dataBase;
 
-public class Participant extends Entity{
+public class Participant extends Entity {
 
     String firstname;
     String lastname;
@@ -25,7 +25,7 @@ public class Participant extends Entity{
     public String
     toString() {
         return "Participant{" +
-                "id=" + id +
+                "id=" + getId() +
                 ", firstname='" + firstname + '\'' +
                 ", lastname='" + lastname + '\'' +
                 '}';

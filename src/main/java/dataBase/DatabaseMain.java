@@ -1,14 +1,19 @@
-package DataBase;
+package dataBase;
+
+import java.util.List;
 
 public class DatabaseMain {
 
     public static void main(String[] args) {
         ParticipantCsvDataStorage participantStorage = new ParticipantCsvDataStorage("participants.csv");
 
-        System.out.println(participantStorage.readAll());
+        List<Participant> participantList = participantStorage.readAll();
+        System.out.println(participantList);
+
+        // TODO instead pass firstname, lastname, and ID to constructor
         Participant Ozge = new Participant();
-        Participant Leo= new Participant();
-        Participant Timo= new Participant();
+        Participant Leo = new Participant();
+        Participant Timo = new Participant();
         Participant Lukas = new Participant();
         Leo.setFirstname("Leo");
         Leo.setLastname("Thiel");

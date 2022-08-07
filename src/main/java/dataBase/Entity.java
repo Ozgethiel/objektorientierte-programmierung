@@ -1,7 +1,7 @@
-package DataBase;
+package dataBase;
 
 public class Entity {
-    int id;
+    private int id;
 
     public int getId() {
         return id;
